@@ -35,20 +35,25 @@
 
 .img-logo3 {max-width: 55%;
 display:none;}
+
+.img-author{
+    max-width: 100%;
+border-radius: 50%;}
+
+.center {text-align: center;}
+
 /*----------------
     LAYOUT
 ------------------*/
 .container {
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
-   
-    
+    margin-right: auto;  
 }
 .row {
     display: flex;
-    flex-wrap: wrap;
-}
+    padding: 10px;
+    justify-content: space-evenly;}
 
 .gap-5  {
     padding: 5px;
@@ -59,8 +64,6 @@ display:none;}
 .gap-30   {
     padding: 30px;
 }
-
-
 .grow {
     flex-grow: 1;
 }
@@ -70,6 +73,26 @@ body {height: 100vh;
     display: flex;
     height: calc(100% - 100px);
 }
+hr {width: 90%;
+color: grey;
+display: none;}
+
+.msc-container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.msc-container div {
+    max-width: 220px;
+}
+.msc-genre {display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    gap: 26px;}
 /*----------------
     TYPOGRAPHY
 ------------------*/
@@ -83,7 +106,8 @@ body {
 .text-grey2{ color: #A3A3A3;
     font-size: 12px;
 }
-
+.text-music {color: white;}
+h1 {color: white;}
 /*----------------
     BUTTONS
 ------------------*/
@@ -91,7 +115,6 @@ body {
     background-color: transparent;
     font-family: inherit;
     border:white 1px solid;
-    border: ;
     padding: 6px 12px;
     cursor: pointer;
     color: white;
@@ -101,7 +124,7 @@ body {
 
 .btn-large {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .btn-primary {
@@ -124,7 +147,7 @@ padding: 5px 5px;}
 
 
 .text-header {display: none;}
-.center { }
+
 
 /*----------------
     MAIN
@@ -134,11 +157,15 @@ main {
     flex-grow: 1;
     overflow-y: auto;
     background-color: #141922;
+    width: 490px;
 }
 
 .main-top {height: 90px;
 width: calc(100% - header);
 background-color: #080B12;}
+
+main section p {padding: 5px;
+flex-wrap: wrap;}
 
 /*----------------
     FOOTER
@@ -158,6 +185,11 @@ footer { height: 100px;
     .text-header{display: inline;}
     .img-logo2{display: none;}
     .img-logo3 {display: inline;}
+    .ing-logodw {width: 25px;
+        margin: 10px;}
+        hr {width: 90%;
+            color: grey;
+            display: flex;}
 }
 /*  S= 639px */
 @media screen and (min-width: 639px) {
