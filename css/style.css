@@ -161,9 +161,7 @@ padding: 5px 5px;}
     align-items: center;
     gap: 5px;}
 
-.header-center:hover {
-    margin-left: 2px;
-    color: greenyellow;}
+
 
 /*----------------
     MAIN
@@ -202,8 +200,8 @@ nav ul {list-style: none;}
 
 .hover-img {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 38%;
     font-size: 50px;
     color: white;
     opacity: 0;
