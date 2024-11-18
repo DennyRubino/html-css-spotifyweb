@@ -2,14 +2,12 @@
     DEBUG
 ------------------*/
 .debug .container {
-    border: 2px dashed blueviolet;
-}
+    border: 2px dashed blueviolet;}
 
 .debug .row .col {
     border: 2px dashed lightcoral;
     background-color: rgba(240, 128, 128, 0.2);
-    min-height: 200px;
-}
+    min-height: 200px;}
 
 /*----------------
     RESET
@@ -17,8 +15,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-}
+    padding: 0;}
 
 /*----------------
     COMMONS
@@ -48,31 +45,25 @@ border-radius: 50%;}
 .container {
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;  
-}
+    margin-right: auto;}
 .row {
     display: flex;
     padding: 10px;
     justify-content: space-evenly;}
 
-.gap-5  {
-    padding: 5px;
-}
-.gap-20  {
-    padding: 20px;
-}
-.gap-30   {
-    padding: 30px;
-}
-.grow {
-    flex-grow: 1;
-}
-body {height: 100vh;
-}
+.gap-5  {padding: 5px;}
+
+.gap-20  {padding: 20px;}
+
+.gap-30  {padding: 30px;}
+
+.grow {flex-grow: 1;}
+
+body {height: 100vh;}
 .app-wrapper {
     display: flex;
-    height: calc(100% - 100px);
-}
+    height: calc(100% - 100px);}
+
 hr {width: 90%;
 color: grey;
 display: none;}
@@ -81,12 +72,12 @@ display: none;}
     display: flex;
     flex-wrap: wrap;    
     padding: 10px;
-    gap: 10px;
-}
+    gap: 20px;
+    max-width: auto;}
 
 .msc-container div {
-    max-width: 220px;
-}
+    max-width: 220px;}
+
 .msc-genre {display: flex;
     flex-wrap: wrap;
     margin: 10px;
@@ -101,18 +92,21 @@ justify-content: center;}
 /*----------------
     TYPOGRAPHY
 ------------------*/
-body {
-    font-family: "Roboto", serif;
-}
+body {font-family: "Roboto", serif;}
+
 .text-grey{ color: #A3A3A3;}
 
 .text-black { color: black;}
 
 .text-grey2{ color: #A3A3A3;
-    font-size: 12px;
-}
-.text-music {color: white;}
+    font-size: 12px;}
+
+.text-music {color: white;
+        position: relative;
+        display: inline-block;}
+
 h1 {color: white;}
+
 /*----------------
     BUTTONS
 ------------------*/
@@ -124,18 +118,27 @@ h1 {color: white;}
     cursor: pointer;
     color: white;
     float: right;
-    border-radius: 50px;
-}
+    border-radius: 50px;}
 
 .btn-large {
     padding: 10px 20px;
     font-size: 12px;
-}
+    background-color: transparent;
+    font-family: inherit;
+    border:white 1px solid;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    border-radius: 50px;}
 
 .btn-primary {
     background-color: lightcoral;
-    color: #fff;
-}
+    color: #fff;}
+
+.btn-large:hover { font-size: 16px;}
+
+a:hover {font-size: 20px;}
 
 /*----------------
     HEADER
@@ -143,8 +146,7 @@ h1 {color: white;}
 header {width: 50px;
 flex-shrink: 0;
 background-color: #000000;
-padding: 6px;
-}
+padding: 6px;}
 
 .header-top {height: calc(100% - 100px);}
 
@@ -157,21 +159,20 @@ padding: 5px 5px;}
 .header-center {
     display: flex;
     align-items: center;
-    gap: 5px; 
-}
+    gap: 5px;}
 
+.header-center:hover {
+    margin-left: 2px;
+    color: greenyellow;}
 
 /*----------------
     MAIN
 ------------------*/
-
 main {
     flex-grow: 1;
     overflow-y: auto;
     background-color: #141922;
-    width: 490px;
-
-}
+    width: 490px;}
 
 .main-top {height: 90px;
 width: calc(100% - header);
@@ -180,7 +181,35 @@ background-color: #080B12;}
 main section p {padding: 5px;
 flex-wrap: wrap;}
 
+.upgrade {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;}
 
+ .type-nav .nav-select {
+    height: 2px;
+    width: 40px;
+    background-color: limegreen;
+    margin: auto;}
+
+nav ul {list-style: none;}
+
+.type-nav a {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: uppercase;}
+
+.hover-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;}
+
+.text-music:hover .hover-img {opacity: 1;}
 /*----------------
     FOOTER
 ------------------*/
@@ -191,8 +220,8 @@ footer {
     background-color: #282828;
     padding: 10px 15px;
     border-top: 1px solid #444;
-    height: 100px;
-}
+    height: 100px;}
+
 .img-player {width: 28px;}
 
 .save {display: flex;
@@ -204,44 +233,38 @@ flex: auto;}
 .controls, .volume {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
+    gap: 10px;}
 
 .time-bar {
     display: flex;
     align-items: center;
-    width: 100%;
-}
+    width: 100%;}
+
 .music-player {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1000px; 
-    align-items: center;
-}
+    align-items: center;}
 
 .track-info {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
+    gap: 10px;}
 
 .album-cover {
     width: 50px;
     height: 50px;
-    border-radius: 5px;
-}
+    border-radius: 5px;}
 
 .track-title {
     font-size: 14px;
     font-weight: bold;
-    color: white;
-}
+    color: white;}
 
 .track-artist {
     font-size: 12px;
-    color: #b3b3b3;
-}
+    color: #b3b3b3;}
 
 
 
@@ -250,28 +273,22 @@ flex: auto;}
     border: none;
     color: #ffffff;
     font-size: 16px;
-    cursor: pointer;
-}
+    cursor: pointer;}
 
-.play-button {
-    font-size: 20px;
-}
+.play-button {font-size: 20px;}
 
 .controls {
     margin-bottom: 10px;
     display: flex;
     gap: 10px;
-    padding-left: 10%;
-}
+    padding-left: 10%;}
 
 
 
 .bar-time  {
     font-size: 12px;
     color: #b3b3b3;
-    margin: 0 5px;
-    
-}
+    margin: 0 5px;}
 
 .music-bar, .volume-bar {
     -webkit-appearance: none;
@@ -279,32 +296,25 @@ flex: auto;}
     height: 4px;
     background-color: #555;
     border-radius: 4px;
-    
-    cursor: pointer;
-}
+    cursor: pointer;}
 
-.music-bar {
-    width: 100%;
-}
+.music-bar { width: 100%;}
 
 .volume-bar {
     width: 60px;
-   padding-left: 10%;
-}
+   padding-left: 10%;}
 .column {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
     max-width: 500px;
-    padding-right: 10%;
-}
+    padding-right: 10%;}
 
-.controls {
-    margin-bottom: 10px;}
-    
-    
-   
+.controls {margin-bottom: 10px;}
+
+.img-fluid:hover { opacity: 50%;}
+
 /*----------------
     RESPONSIVE
     Mobile First
@@ -312,13 +322,21 @@ flex: auto;}
 /* XS >= 552px */
 @media screen and (min-width: 553px) {
   header {width: 230px;}
+
+  .header-center {transition: all;}
+
   .img-logo{width: 25px;
     margin: 10px;}
+
     .text-header{display: inline;}
+
     .img-logo2{display: none;}
+
     .img-logo3 {display: inline;}
+
     .ing-logodw {width: 25px;
         margin: 10px;}
+
         hr {width: 90%;
             color: grey;
             display: flex;}
@@ -330,46 +348,39 @@ flex: auto;}
         flex-direction: row;
         align-items: center;
         gap: 10px;
-        flex: auto;
-    }
+        flex: auto;}
 
     .track-info {
         gap: 8px;
-        flex: auto;
-    }
+        flex: auto; }
 
     .track-details {
         font-size: 14px;
-        flex: auto;
-    }
+        flex: auto;}
 
     .controls {
         gap: 8px;
-        flex: auto;
-    }
+        flex: auto;}
 
     .progress-bar, .volume-slider {
         width: 120px;
-        flex: auto;
-    }
+        flex: auto;}
 }
 
 /* MD >= 878px */
 @media screen and (min-width: 878px) {
     .music-player {
         gap: 20px;
-        flex: auto;
-    }
+        flex: auto;}
 
     .progress-bar {
         width: 200px;
-        flex: auto;
-    }
+        flex: auto;}
 
     .volume-slider {
         width: 100px;
-        flex: auto;
-    }
+        flex: auto;}
+
     .save {display: flex;
         align-items: center;
         gap: 10px;
@@ -381,31 +392,23 @@ flex: auto;}
 @media screen and (min-width: 1440px) {
     .music-player {
         justify-content: space-between;
-        gap: 30px;
-    }
+        gap: 30px;}
 
-    .track-details {
-        font-size: 16px;
-    }
+    .track-details { font-size: 16px;}
 
-    .progress-bar {
-        width: 300px;
-    }
+    .progress-bar { width: 300px;}
 
-    .volume-slider {
-        width: 120px;
-    }
+    .volume-slider {width: 120px;}
     .column {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-grow: 1;
         max-width: 500px;
-        padding-right: 10%;
-    }
+        padding-right: 10%;}
+
     .track-info {
         gap: 8px;
         flex: auto;
-        max-width: 250px;
-    }
+        max-width: 250px;}
 }
