@@ -68,7 +68,7 @@
 
 <h1>Recently played</h1>
 <section class="msc-container">
-<div class="text-music"><img src="img/metal_lifting.jpg" alt=" Metal lifting song" class="img-fluid"><p class="center">Heavy Metal</p><p class="text-grey center">Subtitle</p></div>
+<div class="text-music"><img src="img/metal_lifting.jpg" alt=" Metal lifting song" class="img-fluid hover"><span><i class="fa-regular fa-circle-play"></i></span><p class="center">Heavy Metal</p><p class="text-grey center">Subtitle</p></div>
 <div class="text-music"><img src="img/stranger.jpeg" alt="Stranger Things soundtrack Vol 1" class="img-fluid"><p class="center">Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</p><p class="text-grey center">Kyle Dixon & Micheal Stein</p></div>
 <div class="text-music"><img src="img/aquietplace.jpeg" alt=" A quiet place" class="img-fluid"><p class="center">A quiet Place</p><p class="text-grey center">Subtitle</p></div>
 <div class="text-music"><img src="img/split.jpeg" alt=" Split soundtrack" class="img-fluid"><p class="center">Split</p><p class="text-grey center">Subtitle</p></div>
@@ -84,15 +84,47 @@
 <h1>Artisti più popolari</h1>
 <p class="text-grey">Più ascolti, più accurati saranno i suggeriti</p>
 <section class="msc-container">
-    <div class="text-music"><img src="img/youg.jpeg" alt=" A quiet place" class="img-author"><p class="center">Lana del Rey</p></div>
-    <div class="text-music"><img src="img/einaudi.jpeg" alt=" A quiet place" class="img-author"><p class="center">Ludovico Einaudi</p></div>
+    <div class="text-music"><img src="img/youg.jpeg" alt=" A quiet place" class="img-author img-fluid"><p class="center">Lana del Rey</p></div>
+    <div class="text-music"><img src="img/einaudi.jpeg" alt=" A quiet place" class="img-author img-fluid"><p class="center">Ludovico Einaudi</p></div>
 </section>
 
 </div>
 </main>
 </div>
  <footer>
-    <div class="img-player"><img src="img/sinister.jpeg" class="img-fluid"></div>
+   <div class="music-player">
+      <div class="track-info">
+          <img src="img/sinister.jpeg" alt="Sinister" class="album-cover">
+          <div>
+              <h4 class="track-title">Sinister</h4>
+              <p class="track-artist">Brano</p>
+          </div>
+          <div class="save">
+            <button class="spotify-button"><i class="fa-regular fa-folder"></i></button>
+            <button class="spotify-button"><i class="fa-regular fa-heart"></i></button>
+
+          </div>
+      </div>
+      <div class="column">
+         <div class="controls">
+             <button class="spotify-button"><i class="fa-solid fa-shuffle"></i></button>
+             <button class="spotify-button"><i class="fa-solid fa-backward-step"></i></button>
+             <button class="spotify-button"><i class="fa-solid fa-play"></i></button>
+             <button class="spotify-button"><i class="fa-solid fa-forward"></i></button>
+             <button class="spotify-button"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+         </div>
+         <div class="time-bar">
+             <span class="bar-time">0:25</span>
+             <input type="range" min="0" max="100" value="20" class="music-bar">
+             <span class="bar-time">4:35</span>
+         </div>
+     </div>
+   </div>
+      <div class="volume">
+          <button class="spotify-button"><i class="fa-solid fa-volume-high"></i></button>
+          <input type="range" min="0" max="100" value="50" class="volume-slider">
+      </div>
+  </div>
  </footer>
 </body>
 
